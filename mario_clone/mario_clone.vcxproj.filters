@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов\animations">
+      <UniqueIdentifier>{bd7dbddd-1cb1-4582-9e29-759365a6ddb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\mario">
+      <UniqueIdentifier>{07541e6c-0acd-469d-b141-f6e743d6c9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\megaman">
+      <UniqueIdentifier>{24a32d3e-a778-4e88-9224-ca5ad0b230fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mario_clone.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GeometryBattle_SFML\GeometryBattle\Vec2.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityManager.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Map.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GeometryBattle_SFML\GeometryBattle\Vec2.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Components.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="animations\coinspin.png">
+      <Filter>Файлы ресурсов\animations</Filter>
+    </Image>
+    <Image Include="animations\explosion.png">
+      <Filter>Файлы ресурсов\animations</Filter>
+    </Image>
+    <Image Include="animations\QuestionBlock.png">
+      <Filter>Файлы ресурсов\animations</Filter>
+    </Image>
+    <Image Include="mario\question.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\question2.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\SmallBush.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\SmallCloud.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\SmallPipe.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\TallPipe.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\BigBush.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\BigCloud.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\Busher.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\cloudsmall.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\coin.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\Flagpole.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\GoombaDeath.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\GoombaWalk.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\ground.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="megaman\megaShot.png">
+      <Filter>Файлы ресурсов\megaman</Filter>
+    </Image>
+    <Image Include="megaman\megaSlit.png">
+      <Filter>Файлы ресурсов\megaman</Filter>
+    </Image>
+    <Image Include="megaman\megaStand.png">
+      <Filter>Файлы ресурсов\megaman</Filter>
+    </Image>
+    <Image Include="megaman\megaBuster.png">
+      <Filter>Файлы ресурсов\megaman</Filter>
+    </Image>
+    <Image Include="megaman\megaJump.png">
+      <Filter>Файлы ресурсов\megaman</Filter>
+    </Image>
+    <Image Include="megaman\megaRun.png">
+      <Filter>Файлы ресурсов\megaman</Filter>
+    </Image>
+    <Image Include="mario\brick.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+    <Image Include="mario\castle.png">
+      <Filter>Файлы ресурсов\mario</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
