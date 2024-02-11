@@ -619,6 +619,12 @@ void Game::sRender()
 
 	if (m_player->getComponent<CTransform>().pos.x > m_map.gridSize * m_map.gridX - m_window.getSize().x / 2.f)
 		m_view_x.setCenter(m_map.gridSize * m_map.gridX - m_window.getSize().x / 2.f, m_window.getSize().y / 2.f);
+
+	m_text.setString("x " + std::to_string(m_coinScore));
+	m_text.setPosition(m_view_x.getCenter().x - m_window.getSize().x / 2.f + m_text.getLocalBounds().width, m_view_x.getCenter().y - m_window.getSize().y / 2.f);
+	m_coinCount.setPosition(m_view_x.getCenter().x - m_window.getSize().x / 2.f, m_view_x.getCenter().y - m_window.getSize().y / 2.f + 10);
+	m_window.draw(m_text);
+	m_window.draw(m_coinCount);
 	m_window.setView(m_view_x);
 	m_window.display();
 }
@@ -674,7 +680,12 @@ Game::Game()
 	m_assets.addAnimation(eAnimationTypes::SHOT, eTextureTypes::megaSHOT, 1, 60);
 	m_assets.addTexture(eTextureTypes::marioExplosion, "animations/explosion.png");
 	m_assets.addAnimation(eAnimationTypes::EXPLOSION, eTextureTypes::marioExplosion, 12, 4);
-
+	m_assets.addTexture(eTextureTypes::marioCOINDEC, "mario/coin.png");
+	m_coinCount.setTexture(m_assets.getTexture(eTextureTypes::marioCOINDEC));
+	m_font.loadFromFile("my.otf");
+	m_text.setFont(m_font);
+	m_text.setCharacterSize(64);
+	m_text.setString("x " + std::to_string(m_coinScore));
 
 
 	m_view_x.setSize(m_window.getSize().x , m_window.getSize().y);

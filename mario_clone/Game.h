@@ -5,6 +5,7 @@
 #include "Assets.h"
 #include "Map.h"
 #include "Animation.h"
+#include <string>
 
 
 
@@ -33,6 +34,9 @@ class Game
 	bool m_running = true; 
 	sf::View m_view_x;
 	Assets m_assets;
+	sf::Text m_text;
+	sf::Font m_font;
+	sf::Sprite m_coinCount;
 	bool drawGrid = false; 
 	void loadLevel(const Map &level); 
 	void sMovement(); 

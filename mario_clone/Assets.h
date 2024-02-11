@@ -8,6 +8,7 @@
 enum eTextureTypes {
     marioUNACQBlock,
     marioCOIN,
+    marioCOINDEC,
     marioQBlock,
     marioGround,
     marioBRICK ,
