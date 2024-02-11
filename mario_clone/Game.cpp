@@ -402,6 +402,7 @@ void Game::sCollision()
 						{
 							ent->destroy();	
 						}
+						m_coinScore = 0;
 						loadLevel(m_map);
 						SpawnPlayer(m_map);
 					}
@@ -424,6 +425,7 @@ void Game::sCollision()
 						{
 								ent->destroy();
 						}
+						m_coinScore = 0;
 						loadLevel(m_map);
 						SpawnPlayer(m_map);
 					}
@@ -558,6 +560,7 @@ void Game::sCollision()
 		{
 				ent->destroy();
 		}
+		m_coinScore = 0;
 		loadLevel(m_map);
 		SpawnPlayer(m_map);
 	}
