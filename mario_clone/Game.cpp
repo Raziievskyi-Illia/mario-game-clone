@@ -282,6 +282,7 @@ void Game::sCollision()
 	for (auto& dynamic : m_manager.getEntities(eEntitiesType::DYNAMIC)) {
 		for (auto& tile : m_manager.getEntities(eEntitiesType::TILE))
 		{
+			if (!tile->getComponent<CState>().active) continue;
 			switch (dynamic->tag())
 			{
 			case eLevelEntities::PLAYER:
@@ -512,9 +513,10 @@ void Game::sCollision()
 
 				if ((D.x * D.x + D.y * D.y) <= ((radiusTile + radiusProj) * (radiusTile + radiusProj))/1.5) {
 					projectile->destroy();
-					if(tile->getComponent<CTransform>().pos.x == m_map.grid[36][10].getPosition().x && tile->getComponent<CTransform>().pos.y == m_map.grid[36][10].getPosition().y)
+					if(tile->getComponent<CTransform>().pos.x == m_map.grid[36][10].getPosition().x && tile->getComponent<CTransform>().pos.y == m_map.grid[36][10].getPosition().y && tile->getComponent<CState>().active)
 					{
 						tile->addComponents<CAnimation>(m_assets.getAnimation(eAnimationTypes::EXPLOSION), false);
+						tile->getComponent<CState>().active = false;
 					}
 				}
 			}
